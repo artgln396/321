@@ -7,11 +7,7 @@
     box-sizing: border-box;
     scroll-snap-align: start;
 }
-.page1{
-    height: 50vh;
-    padding: 20px;
-    scroll-snap-align: start;
-}
+
 .main-page{
     margin-bottom: 64px;
 }
@@ -190,131 +186,98 @@ h2 {
     height: auto;
 }
 
-@media only screen and (max-width: 500px) {
-    .navbar {
-        position: sticky;
-        text-align: center;
+@media only screen and (max-width: 1024px) {
+    .col-2 img {
+        width: 300px;
     }
+
+    .col-1 h1 {
+        font-size: 30px;
+    }
+}
+
+@media only screen and (max-width: 767px) {
     .navbar ul {
         flex-direction: column;
         gap: 15px;
+        text-align: center;
     }
+
     .row {
         flex-direction: column;
+        align-items: center;
     }
+
     .col-1 h1 {
-        margin-top: 50px;
-        margin-left: 2px;
         font-size: 40px;
-    }
-    .col-1 p {
-        font-size: 20px;
-        margin-left: 2px;
-    }
-    .col-2{
-        margin-left: 80px;
-    }
-    .col-2 img{
-        margin-right: 100px;
-        color: aliceblue;
-        margin-top: 52px;
-        width: 220px;
-    }
-    .row-1{
-        flex-direction: column;
-    }
-    .row-1 h1{
-        font-size: 20px;
-    }
-    .col-3{
-        color: aliceblue;
-        flex-basis: 50%;
-    }
-    .list-educ{
-        margin-left: 2px;
-        margin-top: 2px;
-    }
-  
-    .contact {
-        width: 80%;
-        margin: 0 auto;
-    }
-    
-    .border {
-        width: 100%;
-    }
-
-    .link {  
-        margin-left: 150px;
-    }
-    .link a img {
-        width: 40px;
-        height: auto;
-    }
-
-}
-@media only screen and (max-width: 767px){
-    .navbar {
-        position: sticky;
         text-align: center;
     }
-    .navbar ul {
-        flex-direction: column;
-        gap: 15px;
-    }
-    .row {
-        flex-direction: column;
-    }
-    .col-1 h1 {
-        margin-top: 50px;
-        margin-left: 50px;
-        font-size: 60px;
-    }
-    .col-1 p {
-        font-size: 20px;
-        margin-left: 29%;
-    }
-    .col-2{
-        margin-left: 31%;
-    }
-    .col-2 img{
-        margin-right: 100px;
-        color: aliceblue;
-        margin-top: 52px;
+
+    .col-2 img {
         width: 220px;
     }
-    .row-1{
-        flex-direction: column;
-        display: flex;
-    }
-    .row-1 h1{
-        font-size: 20px;
-    }
-    .col-3{
-        color: aliceblue;
-        flex-basis: 50%;
-    }
-    .list-educ{
-        margin-left: 2px;
-        margin-top: 2px;
-    }
-    .Cm{
-        margin-top: 2px;
-    }
-    .contact {
+
+
+
+    .border {
         width: 80%;
         margin: 0 auto;
     }
-    
-    .border {
-        width: 100%;
+}
+
+@media only screen and (max-width: 500px) {
+    .col-1 h1 {
+        font-size: 28px;
     }
-    .link {  
-        margin-left: 4%;
+
+    .col-1 p {
+        font-size: 18px;
+        text-align: center;
     }
-    .link a img {
-        width: 40px;
-        height: auto;
+
+    .col-2 img {
+        width: 200px;
+    }
+
+    .link {
+        justify-content: center;
+    }
+}
+@media only screen and (max-width: 375px) {
+    .col-1 h1 {
+        font-size: 29px;
+        margin-top: 30px;
+        margin-left: 8px;
+    }
+    .col-1 p {
+        font-size: 18px;
+        margin-left: 10px;
+    }
+    .link {
+        margin-top: 2px;
+        margin-left: 18px;
+    } 
+    .col-2 img{
+        width: 130px;
+        margin-top: 10px;
+        margin-right: 135px;
+    }
+    .row-1 {
+        flex-direction: column;
+        align-items: center;
+    }
+    .list-educ{
+        margin-left: 31px;
+        margin-top: 2px;
+    }
+    .row-1 .col-3 h1{
+        font-size: 29px; 
+        margin-left: 64px; 
+    }
+    .row-1 .col-4 h1{
+        font-size: 29px;  
+        margin-left: 64px;
     }
 
 }
+
